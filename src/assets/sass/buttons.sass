@@ -1,0 +1,22 @@
+
+@use "./variables"
+@use "./mixins"
+
+.btn
+    @include mixins.btn
+
+    span
+        color: inherit
+        font-size: 1rem
+
+.btn.btnAdd
+    background: linear-gradient(to right, darken(variables.$primary, 50%), variables.$primary)
+
+.btn.btnCheck
+    background: linear-gradient(to right, darken(variables.$btn-check, 20%), variables.$btn-check)
+
+.btn.btnEdit
+    background: linear-gradient(to right, darken(variables.$btn-edit, 50%), variables.$btn-edit)
+
+.btn.btnRemove
+    background: linear-gradient(to right, darken(variables.$btn-remove, 20%), variables.$btn-remove)
